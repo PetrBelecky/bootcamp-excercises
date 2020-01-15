@@ -1,0 +1,39 @@
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    background-color: #444444;
+}
+
+main {
+    width: 80%;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+img {
+    width: 95%;
+    opacity: 0.5;
+}
+
+img:hover {
+    opacity: 1;
+}
+
+a {
+    color: rgba(255, 245, 253, 0.5);
+}
+
+a:hover {
+    color: white;
+}
+
+.the-text { 
+    color: orange; 
+}
+
+.the-text.colorized { 
+    color: red; 
+}
