@@ -1,0 +1,59 @@
+#georgia .example { font-family: Georgia, serif; }
+
+#palatino-linotype .example { font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif }
+
+#times-new-roman .example { font-family: "Times New Roman", Times, serif }
+
+#arial .example { font-family: Arial, Helvetica, sans-serif }
+
+#arial-black .example { font-family: "Arial Black", Gadget, sans-serif }
+
+#comic-sans-ms .example{ font-family: "Comic Sans MS", cursive, sans-serif }
+
+#impact .example{ font-family: Impact, Charcoal, sans-serif }
+
+#lucida-sans-unicode .example{ font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif }
+
+#tahoma .example{ font-family: Tahoma, Geneva, sans-serif }
+
+#trebuchet-ms .example{ font-family: "Trebuchet MS", Helvetica, sans-serif }
+
+#verdana .example{ font-family: Verdana, Geneva, sans-serif }
+
+#courier-new .example{ font-family: "Courier New", Courier, monospace }
+
+#lucida-console .example{ font-family: "Lucida Console", Monaco, monospace }
+
+header {
+    background-color: #0abbbb;
+}
+
+h1 {
+    color: white;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+}
+
+.fonts > .font {
+    border-bottom: 1px solid #c7c7c7;
+}
+
+span.name {
+    font-size: 1.5em;
+}
+
+.code > span {
+    font-weight: bold;
+    font-size: 0.75em;
+}
+
+.font > .code {
+    background-color: #e7e7e7;
+} 
+
+.example > span {
+    font-size: 0.75em;
+}
