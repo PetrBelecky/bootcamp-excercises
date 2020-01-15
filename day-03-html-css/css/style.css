@@ -1,0 +1,24 @@
+/* primary background
+HEX #FFFFFF
+RGB 255, 255, 255
+
+secondary background
+HEX #D2D6EF RGB 210, 214, 239
+
+primary text
+HEX #555555 RGB 85, 85, 85
+
+secondary text
+HEX #23226C RGB 35, 34, 108
+
+tertiary text
+HEX #6290C3 RGB 98, 144, 195 */
+
+article {
+  width: 50rem;
+  margin: 0 auto;
+}
+
+section {
+  padding: 0.5rem 2rem;
+}
