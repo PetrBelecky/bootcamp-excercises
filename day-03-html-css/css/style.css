@@ -21,7 +21,7 @@ body {
 article {
   width: 50rem;
   margin: 0 auto;
-  font-family: Lato, sans-serif;
+  font-family: 'Roboto Slab', serif;
   font-size: 18px;
 }
 section {
@@ -52,7 +52,15 @@ p {
 }
 
 a {
-  color: #23226C;
+  color: #6290C3;
 }
 
+strong {
+  color: black;
+}
+
+em {
+  background-color: #D2D6EF;
+  font-style: normal;
+}
 
