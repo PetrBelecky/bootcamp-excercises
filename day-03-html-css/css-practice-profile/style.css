@@ -1,0 +1,43 @@
+main {
+    width: 50%;
+    margin: 10px auto;
+    background-color: #eeeeee;
+    padding: 25px;
+    color: #444444;
+    border-radius: 3%;
+}
+
+img {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+h1, h2, p, a {
+    text-align: center;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+p, a {
+    font-size: 1rem;
+}
+
+a {
+    color: rgba(0, 102, 255, 0.616);
+    text-decoration: none;
+} 
+
+a:hover {
+    color: rgba(0, 102, 255, 0.932);  
+}
+
