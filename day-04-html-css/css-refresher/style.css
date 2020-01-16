@@ -1,0 +1,37 @@
+
+nav > .link {
+    color:crimson;
+    text-decoration: none;
+}
+
+blockquote {
+    background-color: #eaeaea;
+}
+
+#users span {
+    font-weight: bold;
+}
+
+#users span:nth-child(2) {
+    color: crimson; 
+}
+
+#creators .link {
+    text-decoration: none;
+    font-family: Lato, sans-serif;
+}
+
+#creators .link.font {
+    text-decoration: none;
+    font-family: "PT Serif", serif;
+    font-weight: bold;
+}
+
+#cta > h2 {
+    color: crimson;
+    font-family: Lato, sans-serif;
+}
+
+#cta li:nth-child(odd) {
+    text-decoration: underline;
+}
