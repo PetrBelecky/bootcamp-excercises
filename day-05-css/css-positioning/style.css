@@ -1,0 +1,105 @@
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: grey;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    padding: 0.5em 1em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    color: white;
+}
+
+.trailer {
+    background: black;
+    position: relative;
+    margin: 2em 0;
+}
+
+.trailer .play {
+    width: 5em;
+    height: 5em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.trailer .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0 1em;
+}
+
+.trailer .length {
+    position: absolute;
+    top: 0; 
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 0.5em;
+}
+
+.status {
+    position: absolute;
+    left: 0;
+    top: 100px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 0.5em;
+}
+
+.status .online {
+    color: greenyellow;
+}
+
+.cookie-consent {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: grey;
+    width: 100%;
+    padding: 1em;
+    color: white;
+    align-items: center;
+    font-size: 1em; 
+}
+
+button {
+    background-color: yellowgreen;
+    border: none;
+    color: white;
+    padding: 0.5em;
+    width: 6em; 
+    font-size: 1em; 
+}
+
+img {
+    display: block;
+}
