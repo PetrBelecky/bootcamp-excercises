@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'handwriting-draft_free-version';
+    src: local('handwriting-draft_free-version'),
+        url('handwriting-draft_free-version.woff2') format('woff2'),
+        url('handwriting-draft_free-version.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+}
+
+.one {
+    background-color:goldenrod;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+.two {
+    background-color: orangered;
+    width: 20em;
+    height: 20em;
+    position: relative;
+}
+
+.three {
+    background-color: hotpink;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    font-family: "handwriting-draft_free-version";
+    font-size: 3em;
+}
+
+.four {
+    background-color: mediumseagreen;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.five {
+    background-color: blueviolet;
+    position: fixed;
+    top: 100px;
+    right: 0;
+    border-radius: 10%;
+}
+

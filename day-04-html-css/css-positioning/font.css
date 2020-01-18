@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'handwriting-draft_free-version';
+    src: local('handwriting-draft_free-version'),
+        url('handwriting-draft_free-version.woff2') format('woff2'),
+        url('handwriting-draft_free-version.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
