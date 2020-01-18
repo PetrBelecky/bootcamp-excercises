@@ -1,0 +1,28 @@
+
+body {
+    padding: 1em;
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+
+img {
+    width: 250px;
+}
+
+
+.ironman {
+    float: right;
+    padding: 2em;
+}
+
+.superman {
+    float: right;
+    padding: 2em;
+    clear: right;
+}
+
+.container {
+    padding: 1.5em;
+    border: 1px solid green;
+    overflow: hidden;
+}
