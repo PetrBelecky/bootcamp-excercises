@@ -103,3 +103,39 @@ h2 {
         width: 6rem;
     }
 }
+
+.ratings {
+    flex-direction: column;
+    width: 100%;
+
+    .wrapper {
+        flex-direction: row;
+        justify-content: space-around;
+        height: 90%;
+
+        .rating {
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            height: 25rem;
+
+            .bar {
+                width: 10rem;
+                background-color: grey;
+            }
+        }
+
+        #imdb {
+           height: 75%;
+        }
+
+        #rotten {
+            height: 90%;
+        }
+
+        #metacritic {
+            height: 95%;
+        }
+    }
+
+}
