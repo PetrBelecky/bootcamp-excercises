@@ -9,6 +9,7 @@ html {
     width: 100vw;
     height: 100vh;
     font-family: sans-serif;
+    line-height: 1.5;
 }
 
 .flex {
@@ -43,6 +44,11 @@ nav {
     }
 }
 
+h2 {
+    align-self: center;
+    padding: 0.5em;
+}
+
 .welcome {
     flex-direction: column;
     color: white;
@@ -53,4 +59,24 @@ nav {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.plot {
+    flex-direction: column;
+
+    .wrapper {
+        flex-direction: row;
+
+        img {
+            width: 35rem;
+        }
+
+        .wrapper {
+            flex-direction: column;    
+
+            p {
+                margin: 1em;
+            }
+        }
+    }
 }
