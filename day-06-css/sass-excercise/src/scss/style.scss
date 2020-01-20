@@ -15,6 +15,17 @@ html {
     display: flex;
 }
 
+//needs to be either added to all elements or find another way
+.content {
+    max-width: 50rem;
+}
+
+main {
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;    
+}
+
 nav {
     background-color: grey;
     width: 100%;
@@ -26,4 +37,20 @@ nav {
         text-decoration: none;
         padding: 0em 1em;
     }
+
+    a:hover {
+        color: lightblue;
+    }
+}
+
+.welcome {
+    flex-direction: column;
+    color: white;
+    padding: 5rem;
+    width: 100%;
+    align-items: center;
+    background-image: url("/img/welcome.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
