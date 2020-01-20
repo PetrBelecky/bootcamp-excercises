@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.5;
+    width: 100%;
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+body {
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    background-color: grey;
+    min-height: 10rem;
+}
+
+aside {
+    min-width: 30%;
+    background-color: orange;
+}
+
+main {
+    flex-grow: 1;
+}
+
+footer {
+    background-color: lightgray;
+    min-height: 10rem;
+}
+
+article {
+    text-align: justify;
+    padding: 2rem 9rem;
+}
+
+h1 {
+    border-bottom: 1px solid black;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+
+h2 {
+    color: white;
+    font-size: 2rem;
+    padding: 2rem 0rem;
+    padding-left: 4rem;
+}
