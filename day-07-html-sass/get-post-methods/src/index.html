@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+    <!-- if action is empty, data will be send into same page -->
+    <form action="https://classes.codingbootcamp.cz/assets/classes/request-visualization/script.php" method="POST">
+
+        <input type="hidden" name="logged_in" value="false">
+        <hr>
+        <input type="text" name="name" placeholder="your name">
+        <hr>
+        <textarea name="bio" id="" cols="30" rows="10" placeholder="Your bio"></textarea>
+        <hr>
+        <!--    if I want to send not-checked checkbox, I use hidden input              only last of the inputs with same names i sent
+        -->
+        <input type="hidden" name="is_delivered" value="0">
+        <label>
+            Is delivered?
+            <input type="checkbox" name="is_delivered" id="checkbox" value="1">
+        </label>
+        <hr>
+
+        <label>Male:
+            <input type="radio" name="gender" value="male">
+        </label>
+
+        <label>Female:
+            <input type="radio" name="gender" value="female">
+        </label>
+
+        <label>Non-binary:
+            <input type="radio" name="gender" value="nonbinary">
+        </label>
+
+        <hr>
+
+        <label> Country
+            <select name="Country" id="">
+
+                <option value="CZ">Czech Republic</option>
+                <option value="SK" selected>Slovakia</option>
+
+            </select>
+        </label>
+
+        <hr>
+
+        <label>
+            Email
+            <input type="email" name="email" id="">
+        </label>
+
+
+
+        <hr>
+
+        <label>
+            Ulice
+            <input type="text" name="address[street]" id="">
+        </label>
+
+        <label>
+            Číslo popisné
+            <input type="number" name="address[number]" id="">
+        </label>
+
+        <label>
+            Město
+            <input type="text" name="address[city]" id="">
+        </label>
+
+        <input type="submit" value="Submit this form" name="button">
+    </form>
+
+</body>
+
+</html>

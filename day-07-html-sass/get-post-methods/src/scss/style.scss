@@ -1,0 +1,19 @@
+
+body {
+    padding: 4rem;
+    background-color: lightblue;
+}
+
+hr {
+    margin: 4rem;
+}
+
+input:focus, textarea:focus select:focus {
+    border: 1px solid lightcoral;
+    background-color: grey;
+    color: honeydew;
+}
+
+input, textarea {
+    font-family: sans-serif;
+}
