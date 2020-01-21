@@ -13,7 +13,7 @@
   
   .container {
     max-width: 1200px;
-    margin: 1rem auto;
+    margin: 1rem 1rem;
   }
   
   header {
@@ -37,6 +37,11 @@
   
     font-weight: 900;
     font-size: 3rem;
+
+    @media (max-width: 768px) {
+        font-size: 2.5rem;
+    }
+
   }
   
   nav {
@@ -68,6 +73,18 @@
   
   .plans {
     margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (min-width: 768px) and (max-width: 1200px) {
+    
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+
   }
   
   .card {
@@ -76,6 +93,14 @@
     background-color: white;
     border-radius: 5px;
     box-shadow: 0px 0px 2px #aaa;
+
+    flex-basis: 24%;
+    flex-shrink: 0;
+
+    @media (min-width: 768px) and (max-width: 1200px) {
+        min-width: 48%;
+    }
+
   }
   
   h2 {
