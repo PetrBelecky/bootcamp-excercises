@@ -1,7 +1,13 @@
+
+$primary_color: blue;
+$secondary_color: lightgray; 
+
+//comments are not compiled into final css file
 body {
-    background-color:lightgray;
+    background-color: $secondary_color;
 }
 
 h1 {
-    color: red;
+    color: $primary_color;
 }
+

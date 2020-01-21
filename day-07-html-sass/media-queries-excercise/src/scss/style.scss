@@ -17,7 +17,14 @@
   }
   
   header {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        flex-direction: column-reverse;
+    }
+
   }
   
   .logo {
@@ -33,11 +40,16 @@
   }
   
   nav {
+    display: flex;
     padding-left: 2rem;
     background-color: #435058;
     border-radius: 4px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
   }
   
   nav a {
@@ -46,6 +58,7 @@
     text-decoration: none;
     line-height: 3rem;
     border-bottom: 2px solid transparent;
+    padding-right: 2rem;
   }
   
   nav a:hover {
