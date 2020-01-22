@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+@import "variables";
+@import "icons";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  font-family: 'Oswald', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.sidebar {
+  position: fixed;
+  
+  width: 16rem;
+  height: 100vh;
+  padding: 1rem 2rem;
+
+  background-color: $color-bg-primary;  
+  
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  text-align: center;
+
+  &__logo {
+    background-image: url('/img/vibecast-logo.svg');
+    background-size: contain;
+    width: 12rem;
+    height: 12rem;
+  }
+}
+
+.podcast {
+  margin-left: 16rem;
+}
+
+.podcast-heading {
+  display: flex;
+  align-items: center;
+  
+  height: 5rem;
+  padding: 1rem 2.5rem;
+  
+  background-color: $color-bg-secondary;
+
+  &__logo {
+    img {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    margin-right: 1rem;
+  }
+
+  &__title {
+    padding-bottom: 0.5rem;
+    
+    font-size: 2rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+  }
+}
+
+.episode {
+  border-bottom: 1px solid $color-bg-secondary;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  padding: 1rem 1rem;
+
+  &__desc {
+    display: flex;
+    align-items: center;
+    
+  }
+
+  img {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+  }
+
+  &__title::before {
+    content: "WITH ";
+  }
+
+  &__airing {
+    display: flex;
+    color: $color-text-secondary;
+    align-items: flex-end;
+  }
+
+  &__num {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: $color-text-secondary;
+    margin-right: 1rem;
+  }
+
+  &__title {
+    font-size: 2rem;
+  }
+
+  &__date {
+    margin-right: 1rem;
+  }
+
+  &__date::before {
+    content: "";
+    display: inline-block;
+    background: url("/img/calendar.svg") no-repeat;
+    opacity: 0.5;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.2rem;
+    box-sizing: border-box;
+  }
+
+  &__time::before {
+    content: "";
+    display: inline-block;
+    background: url("/img/wall-clock.svg") no-repeat;
+    opacity: 0.5;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.2rem;
+  }
+}
+
