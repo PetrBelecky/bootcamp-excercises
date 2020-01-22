@@ -5,6 +5,8 @@
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html {
@@ -34,6 +36,79 @@ body {
     background-size: contain;
     width: 12rem;
     height: 12rem;
+    margin-bottom: 2rem;
+  }
+
+  &__nav {
+    text-transform: uppercase; 
+    color: $color-text-sidebar;
+    margin-bottom: 2rem;
+
+    a {
+      display: block;
+      padding: 0.3rem 0;
+      text-decoration: none;
+      color: white;
+    }
+
+    a:hover {
+      color: $color-text-sidebar;
+    }
+  }
+
+  &__promo-text {
+    color: white;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+
+  &__name {
+    color: $color-text-sidebar;
+  }
+
+  &__twitter {
+    color: $color-text-sidebar;
+    margin-bottom: 2rem;
+
+    a {
+      display: block;
+      padding: 0.3rem 0;
+      text-decoration: none;
+      color: $color-text-sidebar;
+    }
+
+    a:hover {
+      color: white;
+    }
+  }
+
+  &__btn {
+    padding: 0.5rem 1rem;
+    border-radius: 5%;
+    outline: none;
+    border: none;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 1rem;
+  }
+
+  &__btn--primary {
+    background-color: $color-btn-primary;
+
+    p::before {
+      content: "";
+      background-image: url("/img/bell.svg");
+      display: inline-block;
+      width: 1rem;
+      height: 1rem;
+      align-self: center;
+      margin-right: 1rem;
+      transform: translateY(10%);  
+    }
+  }
+
+  &__btn--primary:hover {
+    background-color: rgb(42, 91, 182);
   }
 }
 
@@ -78,7 +153,6 @@ body {
   &__desc {
     display: flex;
     align-items: center;
-    
   }
 
   img {
