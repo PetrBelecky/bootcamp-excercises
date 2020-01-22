@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+    padding: 2.5rem;
+    background-color: rgb(20, 20, 20);
+    line-height: 1.5;
+}
+
+.flex {
+    display: flex;
+}
+
+main {
+    background-image: url("https://classes.codingbootcamp.cz/assets/classes/676/coffee-photo.jpg");
+    background-size: cover;
+    height: 100%;
+    flex-direction: row-reverse;
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
+
+    .content-wrapper {
+        background-color: rgba(75, 43, 24, 0.6);
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        color: white;
+        padding: 1em 1.5em;
+
+        @media (max-width: 1200px) {
+            width: 45%
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            padding: 0.8em;
+            line-height: 1.2;
+        }
+
+        p{
+            font-size: 1.1rem;
+            text-align: center;
+            padding: 0 2em 3em 2em;
+            padding-bottom: 4em;
+        }
+
+        button {
+            background-color: rgb(218, 2, 2);
+            font-size: 2rem;
+            padding: 1em;
+            color: rgb(231, 228, 228);
+            border: rgb(231, 228, 228) 1px solid;
+            border-radius: 5%;
+        }
+    }
+
+}
+
