@@ -14,6 +14,7 @@
 
   <main>
     <h1>DOM manipulation practice</h1>
+
     <section class="product">
 
       <h2 class="product__title">I am Batduck!</h2>
@@ -25,10 +26,10 @@
             href="https://unsplash.com/@brett_jordan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brett
             Jordan</a> on Unsplash</p>
 
-        <div class="buy__wrapper">
+        <form class="buy__wrapper" onsubmit="return false">
           <button class="product__bnb" onclick="changeLabel()">Buy Me!</button>
           <input required class="buy__input" type="number" name="quantity" id="">
-        </div>
+        </form>
 
         <p class="quantity__message">You have no Batduck in your cart.</p>
 
@@ -36,10 +37,10 @@
 
     </section>
 
-    <br>
+    <section class="login">
 
 
-
+    </section>
 
 
   </main>
