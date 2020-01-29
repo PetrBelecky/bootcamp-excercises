@@ -62,3 +62,22 @@ const changeImage = () => {
   const image = document.querySelector('.bulb__wrapper');
   image.classList.toggle('bulb--on');
 }
+
+const showResult = (event) => {
+  event.preventDefault();
+  const box = document.querySelector('.result');
+  const msg = document.querySelector('#result');
+  const pay = Number(document.querySelector('#pay').value);
+  const hours = Number(document.querySelector('#hours').value);
+  const days = Number(document.querySelector('#days').value);
+  const tax = Number(document.querySelector('#tax').value);
+
+  const calculateSalary = (pay, hours, days, tax) => {
+
+    return Math.round(pay * hours * days * ((100 - tax) / 100));
+  }
+
+  box.classList.remove('hidden');
+  const calculatedSalary = calculateSalary(pay, hours, days, tax);
+  msg.textContent = calculatedSalary.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + ' EUR';
+}

@@ -207,3 +207,86 @@ input[type="submit"]:active {
 .bulb--on {
   background-image: url("bulb-on.png");
 }
+
+.salary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  width: 100%;
+}
+
+.salary > form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 20rem;
+}
+
+.salary input {
+  font-size: 0.9rem;
+  width: 100%;
+  height: 100%;     
+  padding-left: 0.4rem; 
+  border: 1px solid lightgray; 
+}
+
+.salary .input__wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 20rem;
+  height: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.salary label {
+  position: absolute;
+  top: 0.4rem;
+  left: 0.4rem;
+  font-size: 0.8rem;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+.salary .result {
+  background-color: rgb(238, 238, 238);
+  font-weight: bold;
+  width: 100%;
+  height: 5rem;
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.result > p {
+  
+}
+
+.salary input[type="submit"] {
+  height: 2rem;
+  width: 6rem;
+  padding: 0;
+  border-radius: 4%;
+  margin-left: auto;
+  display: block;
+  background-color: #f0f0f0;
+}
+

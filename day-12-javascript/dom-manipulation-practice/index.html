@@ -69,6 +69,39 @@
       </div>
     </section>
 
+    <section class="salary">
+      <h2>
+        Calculate your salary (in EUR)
+      </h2>
+
+      <form action="#" onsubmit=showResult(event)>
+        <p class="message" id="salary-message"></p>
+        <div class="input__wrapper">
+          <input type="number" name="" id="pay" required>
+          <label for="pay">Your hourly earn</label>
+        </div>
+        <div class="input__wrapper">
+          <input type="number" name="" id="hours" required>
+          <label for="hours">Hours per day</label>
+        </div>
+        <div class="input__wrapper">
+          <input type="number" name="" id="days" required>
+          <label for="days">Days in month</label>
+        </div>
+        <div class="input__wrapper">
+          <input type="number" name="" id="tax" disabled readonly value="15">
+          <label for="tax">Expected tax in %</label>
+        </div>
+
+        <div class="result hidden">
+          <p id="result">20 000 EUR</p>
+        </div>
+
+        <input type="submit" value="Calculate">
+      </form>
+
+    </section>
+
 
   </main>
 
