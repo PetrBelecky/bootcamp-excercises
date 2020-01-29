@@ -57,3 +57,8 @@ const showMessage = (event) => {
   }
 
 }
+
+const changeImage = () => {
+  const image = document.querySelector('.bulb__wrapper');
+  image.classList.toggle('bulb--on');
+}

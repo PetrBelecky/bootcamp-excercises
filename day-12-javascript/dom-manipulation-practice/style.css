@@ -186,3 +186,24 @@ input[type="submit"]:active {
   color: #158815;
 }
 
+.bulb {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.bulb__wrapper {
+  width: 80%;
+  height: 30rem;
+  background-image: url("bulb-off.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bulb--on {
+  background-image: url("bulb-on.png");
+}
