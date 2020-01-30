@@ -1,0 +1,57 @@
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.lights {
+  padding-top: 5rem;
+  width: 70%;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+}
+
+.lights > p {
+  position: absolute;
+  top: 3rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.lights > div {
+  height: 80%;
+  width: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.lights__stop--on {
+  background-image: url("stop-on.svg");
+}
+
+.lights__stop--off {
+  background-image: url("stop-off.svg");
+}
+
+.lights__walk--on {
+  background-image: url("walk-on.svg");
+}
+
+.lights__walk--off {
+  background-image: url("walk-off.svg");
+}
+

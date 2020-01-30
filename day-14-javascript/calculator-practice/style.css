@@ -1,0 +1,83 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(250, 250, 250);
+}
+
+.calc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  width: 20rem;
+}
+
+.calc > input {
+  width: 100%;
+  height: 2.5rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid grey;
+  outline: none;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.calc__btn-add {
+  height: 2.5rem;
+  width: 48%;
+  background-color: lightskyblue;
+  color: white;
+  font-weight: bold;
+  border: none;
+  font-size: 1rem;
+}
+
+.calc__btn-substract {
+  height: 2.5rem;
+  width: 48%;
+  background-color: tomato;
+  color: white;
+  font-weight: bold;
+  border: none;
+  font-size: 1rem;
+}
+
+.calc__result {
+  background-color: black;
+  color: white;
+}
+
+.calc__input {
+  background-color: white;
+  color: black;
+}
+
+.calc__btn-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
