@@ -2,18 +2,26 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  padding: 1rem 3rem;
 }
 
 .output {
   text-align: center;
-  thead {
+  border-collapse: collapse;
+
+  thead > tr {
     font-size: 1.5rem;
     background-color: #eee;
-    padding: 1rem;
+    height: 3rem;
+    padding: 2rem 1rem;
   }
   td {
     border-bottom: 1px solid #eee;
-    padding: 1rem;
+    padding: 1rem 3rem;
   }
 
   &__item {
