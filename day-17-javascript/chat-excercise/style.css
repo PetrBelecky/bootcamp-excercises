@@ -1,0 +1,66 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  width: 100vw;
+  font-family: sans-serif;
+}
+
+.chat {
+  width: 50%;
+  min-width: 20rem;
+  margin: 2rem auto;
+}
+
+.chat__bubles {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+img {
+  display: block;
+  width: 20%;
+  flex-shrink: 0;
+}
+
+li {
+  border: 1px solid #eee;
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+.local > li {
+  background-color: #171ada;
+  color: white;
+}
+
+.remote > li {
+  background-color: #dadada;
+  color: black;
+}
+
+.chat__wrapper {
+  width: 70%;
+  display: flex;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.chat__wrapper.local {
+  flex-direction: row;
+  align-self: flex-start;
+}
+
+.chat__wrapper.remote {
+  flex-direction: row-reverse;
+  align-self: flex-end;
+}
