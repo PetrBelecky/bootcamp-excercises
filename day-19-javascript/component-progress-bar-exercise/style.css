@@ -35,6 +35,7 @@ body {
   display: flex;
   width: 100%;
   height: 64px;  
+  margin-bottom: 2rem;
 }
 
 .bar {
@@ -65,4 +66,23 @@ body {
   text-align: center;
   border: 1px solid #fc6b3693;
   border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.color {
+  height: 5rem;
+  width : 100%;
+  display: block;
+  border: 1px solid #ddd;
+  margin-bottom: 2rem;
+}
+
+.color__changer {
+  width: 7.5rem;
+  height: 1.5rem;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: block;
 }

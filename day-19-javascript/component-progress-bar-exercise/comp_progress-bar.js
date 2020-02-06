@@ -1,13 +1,15 @@
 class ProgressBar {
 
-  // creator can choose an initial value
-  constructor(value) {
+  // creator can choose an initial value + color of bar + max val
+  constructor(value, color, max) {
     this.value = value;
+    this.color = color;
+    this.max = max;
   }
 
   // increment value by 1 and call update
   increment() {
-    if (this.value < 10) {
+    if (this.value < this.max) {
       this.value += 1;
       this.update();
     }
@@ -27,7 +29,7 @@ class ProgressBar {
     this.element.className = 'progress-bar';
     this.element.innerHTML = (
       `<div id="label" class="label">
-        <span id="counter"></span>/<span id="maximum">10</span>
+        <span id="counter"></span>/<span id="maximum">${this.max}</span>
        </div>
        <div class="progress">
         <div id="minus" class="btn-minus"></div>
@@ -38,6 +40,10 @@ class ProgressBar {
        </div>
        <div id="message" class="message"></div>`
     );
+
+    // change the color based on creator preferences
+    const knobElm = this.element.querySelector('#knob');
+    knobElm.style.backgroundColor = this.color;
 
     // add event listener to add button, calling increment method
     const btnPlus = this.element.querySelector('#plus');
@@ -59,21 +65,21 @@ class ProgressBar {
 
     // change graphical value based on actual value
     const knobElm = this.element.querySelector('#knob');
-    knobElm.style.width = `${this.value * 10}%`;
+    knobElm.style.width = `${((this.value / this.max) * 100)}%`;
 
     // show message, if boundaries are hit
-    const msgEl = this.element.querySelector('#message');
 
-    if (this.value === 10) {
+    /* const msgEl = this.element.querySelector('#message');
+    if (this.value === this.max) {
       msgEl.className = 'message--warn';
-      msgEl.textContent = '10 is a maximum';
+      msgEl.textContent = `${this.max} is a maximum value`;
     } else if (this.value === 0) {
       msgEl.className = 'message--warn';
-      msgEl.textContent = '0 is a minimum';
+      msgEl.textContent = '0 is a minimum value';
     } else {
       msgEl.className = 'message';
       msgEl.textContent = '';
-    }
+    } */
   }
 
   // append created element to DOM
