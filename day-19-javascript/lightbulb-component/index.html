@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <main>
+    <h1>DOM manipulation practice <br>(with JS Classes)</h1>
+
+    <section class="product">
+
+      <h2 class="product__title">I am Batduck!</h2>
+
+      <div class="product__wrap">
+        <img class="product_thumb" src="batduck.jpg" alt="Batduck product photo">
+
+        <p class="product__desc">Photo by <a
+            href="https://unsplash.com/@brett_jordan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Brett
+            Jordan</a> on Unsplash</p>
+
+        <form class="buy__wrapper" onsubmit="return false">
+          <button class="product__bnb" onclick="changeLabel()">Buy Me!</button>
+          <input required class="buy__input" type="number" name="quantity" id="">
+        </form>
+
+        <p class="quantity__message">You have no Batduck in your cart.</p>
+
+      </div>
+
+    </section>
+
+    <section class="login">
+
+      <h2>Create your account</h2>
+      <form action="#" onsubmit=showMessage(event)>
+        <p class="message" id="message"></p>
+        <div class="input__wrapper">
+          <input type="email" name="" id="email" required>
+          <label for="email">E-mail</label>
+        </div>
+        <div class="input__wrapper">
+          <input type="password" name="" id="pass1" required>
+          <label for="pass1">Choose password</label>
+        </div>
+        <div class="input__wrapper">
+          <input type="password" name="" id="pass2" required>
+          <label for="pass2">Repeat chosen password</label>
+        </div>
+        <input type="submit" value="Confirm">
+      </form>
+
+    </section>
+
+    <section class="bulb">
+      <h2>
+        Light me up!
+      </h2>
+
+      </div>
+    </section>
+
+    <section class="salary">
+      <h2>
+        Calculate your salary (in EUR)
+      </h2>
+      <!-- form will be there -->
+    </section>
+
+  </main>
+
+  <script src="comp_salary.js"></script>
+  <script src="comp_bulb.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
