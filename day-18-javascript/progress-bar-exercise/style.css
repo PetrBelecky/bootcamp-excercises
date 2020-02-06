@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  width: 600px;
+  margin: 100px auto;
+}
+
+.label {
+  text-align: center;
+  margin: 20px;
+  font-size: 30px;
+}
+
+.btn-plus, .btn-minus {
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+}
+
+.btn-plus {
+  background-image: url('img/plus.png');
+}
+
+.btn-minus {
+  background-image: url('img/minus.png');
+}
+
+.progress {
+  display: flex;
+  width: 100%;
+  height: 64px;  
+}
+
+.bar {
+  flex: 1;
+  height: 64px;
+  margin: 0 8px;
+  background-color: rgb(212, 212, 212);
+}
+
+.knob {
+  width: 40%;
+  height: 64px;
+  background-color: rgb(255, 82, 0);
+}
+
+.message {
+  height: 0;
+}
+
+.message--warn {
+  display: block;
+  padding: 0.5rem;
+  width: 100%;
+  margin-top: 1rem;
+  background-color: #fc6b3660;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #fc6b3693;
+  border-radius: 10px;
+}
