@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  width: 100vw;
+  font-family: sans-serif;
+  color: rgb(71, 71, 71);
+}
+
+main {
+  margin: 0 auto;
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  margin: 4rem 0;
+  line-height: 1.3;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+section {
+  border-bottom: lightgray 1px solid;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.product__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin-bottom: 1rem;
+}
+
+.product img {
+  width: 100%;
+}
+
+.product div > p {
+  
+  width: 100%;
+  text-align: center;
+  background-color: rgb(241, 241, 241);
+  padding: 0.5em;
+}
+
+.buy__wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin: 1rem 0;
+
+}
+
+.product__bnb {
+  width: 6.5rem;
+  height: 2.5rem;
+  border: white 1px solid;
+  border-radius: 8%;
+  color: white;
+  background-color: steelblue;
+  font-size: 1.2rem;
+}
+
+.product__bnb:hover {
+  background-color: rgba(50, 136, 206, 0.925);
+}
+
+.btn--cart {
+  width: 40%;
+  height: 2.5rem;
+  border: white 1px solid;
+  border-radius: 8%;
+  color: white;
+  font-size: 1.2rem;
+  background-color: #8fbc8f;
+}
+
+.buy__input {
+  width: 40%;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  width: 100%;
+}
+
+.login > form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 20rem;
+}
+
+.login input {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  height: 3rem;     
+  padding-top: 1.3rem;
+  padding-bottom: 1rem;  
+  padding-left: 0.4rem; 
+  border: 1px solid lightgray; 
+}
+
+.login .input__wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 20rem;
+}
+
+.login label {
+  position: absolute;
+  top: 0.2rem;
+  left: 0.4rem;
+  font-size: 0.8rem;
+}
+
+input:focus{
+  background-color: rgb(250, 250, 250);
+}
+
+input:focus + label {
+  color: #0074D9;
+  font-weight: bold;
+}
+
+input[type="submit"] {
+  height: 2rem;
+  width: 6rem;
+  padding: 0;
+  border-radius: 4%;
+  margin-left: auto;
+  display: block;
+  background-color: #f0f0f0;
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:active {
+  background-color: #fafafa;
+  border: 1px solid #0074D9;
+  color: #0074D9;
+  font-weight: bold;
+}
+
+.msg {
+  background-color: rgb(238, 238, 238);
+  font-weight: bold;
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.msg--error {
+  color: #dd2626;
+}
+
+.msg--success {
+  color: #158815;
+}
+
+.bulb {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bulb__wrapper {
+  width: 80%;
+  height: 30rem;
+  background-image: url("bulb-off.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bulb--on {
+  background-image: url("bulb-on.png");
+}
+
+.salary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  width: 100%;
+}
+
+.salary > form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 20rem;
+}
+
+.salary input, .salary button {
+  font-size: 0.9rem;
+  width: 100%;
+  height: 100%;     
+  padding-left: 0.4rem; 
+  border: 1px solid lightgray; 
+}
+
+.salary .input__wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 20rem;
+  height: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.salary label {
+  position: absolute;
+  top: 0.4rem;
+  left: 0.4rem;
+  font-size: 0.8rem;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+.salary .result {
+  background-color: rgb(238, 238, 238);
+  font-weight: bold;
+  width: 100%;
+  height: 5rem;
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.result > p {
+  
+}
+
+.salary button {
+  height: 2rem;
+  width: 6rem;
+  padding: 0;
+  border-radius: 4%;
+  margin-left: auto;
+  display: block;
+  background-color: #f0f0f0;
+}
+
