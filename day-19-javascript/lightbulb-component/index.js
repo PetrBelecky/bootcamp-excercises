@@ -18,6 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
     'Batduck');
   product.mount(productWrapper);
 
+  const loginWrapper = document.querySelector('.login');
+  const loginForm = new Login();
+  loginForm.mount(loginWrapper);
+
 })
 
 /*
