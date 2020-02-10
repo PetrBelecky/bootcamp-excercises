@@ -1,0 +1,23 @@
+.term {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  min-height: 5rem;
+
+  margin-bottom: 1rem;
+  padding: 1rem;
+
+  background-color: white;
+  border-radius: 1px;
+  box-shadow: 0 0 5px gray;
+}
+
+.term__headline {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.term__defintion {
+  font-size: 0.9rem;
+}
