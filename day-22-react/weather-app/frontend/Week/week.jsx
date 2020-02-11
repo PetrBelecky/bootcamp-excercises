@@ -22,7 +22,7 @@ export class Week extends React.Component {
                   dayTemp={`${obj.tempDay}°`}
                   nightTemp={`${obj.tempNight}°`}
                   weather={obj.weather}
-                />
+                />q
               )
             })
           }
