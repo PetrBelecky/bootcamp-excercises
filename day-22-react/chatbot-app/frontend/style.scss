@@ -1,0 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  width: 100vw;
+  font-family: sans-serif;
+}
+
+.chat {
+  width: 50%;
+  min-width: 20rem;
+  margin: 2rem auto;
+}

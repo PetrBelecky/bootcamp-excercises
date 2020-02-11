@@ -1,0 +1,17 @@
+.button {
+  position: absolute;
+  bottom: -1.4rem;
+  right: 1rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 2rem;
+
+  color: black;
+
+  &__image {
+    cursor: pointer;
+  }
+}
