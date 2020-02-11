@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:regular,700');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+  min-height: 100vh;
+  
+  background-color: powderblue;
+}
+
+.contacts {
+  width: 20rem;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 1rem;
+  padding: 1rem;
+
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px gray;
+}
+
+.contact__avatar {
+  width: 3rem;
+  height: 3rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.contact__avatar--male {
+  background-image: url('img/male.png');
+}
+
+.contact__avatar--female {
+  background-image: url('img/female.png');
+}
+
+.contact__body {
+  flex: 1;
+  margin-left: 1rem;
+}
+
+.contact__callbtn {
+  border: none;
+  outline: none;
+  width: 2rem;
+  height: 2rem;
+  background-color: white;
+  background-image: url('img/phone.png');
+  background-size: contain;
+
+  cursor: pointer;
+}
+
+.contact__name {
+  font-weight: bold;
+}
