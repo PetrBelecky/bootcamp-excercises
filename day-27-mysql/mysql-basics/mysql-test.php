@@ -3,6 +3,7 @@
 require_once "DB.php";
 require_once "DB_functions.php";
 require_once "Country.php";
+require_once "Region.php";
 
 $success = connect('localhost', 'world', 'root', 'rootroot');
 
@@ -69,3 +70,54 @@ function query($page_number) {
 }
 
 var_dump(query(1));
+
+echo "<br>";
+echo "-------------";
+echo "<br>";
+
+$result = select('
+SELECT *
+FROM `city`
+WHERE `District` LIKE "%Holland"
+');
+
+
+echo "<br>";
+echo "-------------";
+echo "<br>";
+
+var_dump($result);
+$result = select('
+SELECT *
+FROM `city`
+WHERE `Name` LIKE "%ville%"
+');
+
+var_dump($result);
+
+echo "<br>";
+echo "-------------";
+echo "<br>";
+
+var_dump($result);
+$result = select('
+SELECT *
+FROM `city`
+WHERE `CountryCode` IN ("CZE", "SVK", "POL", "HUN")
+ORDER BY `Population` DESC
+LIMIT 10
+');
+
+var_dump($result);
+
+echo "<br>";
+echo "-------------";
+echo "<br>";
+
+$region = new Region;
+$region->name = 'Central Africa'; 
+//$region->insert();
+
+
+
+
