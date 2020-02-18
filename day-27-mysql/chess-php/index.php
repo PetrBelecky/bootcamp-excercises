@@ -20,7 +20,6 @@ require_once "Board.php";
 $board = new Board();
 echo $board->string();
 
-
 /* $black_pawn = new Piece('p');
 $white_queen = new Piece('Q'); */
 
