@@ -24,11 +24,16 @@ class Board {
 
     for ($j= 1; $j < 9 ; $j+= 1) { 
 
-      $square = new Square($i, $j);
-      echo $square;
+      if ($this->array[$i][$j]) {
+        $square = new Square($i, $j, new Piece($this->array[$i]["$j"]));
+        echo $square;
+      } else {
+        $square = new Square($i, $j);
+        echo $square;
+      }
+    
     }
   }
- }
+}
 
- 
 }
