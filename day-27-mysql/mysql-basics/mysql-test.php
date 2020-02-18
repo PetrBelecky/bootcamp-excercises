@@ -118,6 +118,27 @@ $region = new Region;
 $region->name = 'Central Africa'; 
 //$region->insert();
 
+$region = select_one("
+SELECT * 
+FROM `Region` 
+WHERE `name` = ?", 
+['Central Africa'], 'Region');
+
+$region->slug = 'central-africa-2';
+$region->save();
+
+var_dump($region);
+
+$region->delete();
+
+echo "<br>";
+echo "-------------";
+echo "<br>";
+
+
+
+
+
 
 
 

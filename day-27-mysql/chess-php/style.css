@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: salmon;
+  padding: 7rem;
+}
+
+main {
+  width: 40rem;
+  height: 40rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+div {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.light {
+  background-color: white;
+}
+
+div.dark {
+  background-color: black;
+}
