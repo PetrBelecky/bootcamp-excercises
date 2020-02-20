@@ -2,17 +2,18 @@
 
 class Dice
 {
-    protected $lowest_num = 1;
-    protected $highest_num = 6;
+    private $lowest_num = 1;
+    private $highest_num = 0;
 
-    public function roll()
+    public function __construct($number_of_sides)
     {
-        $random = rand($this->lowest_num, $this->highest_num);
-        echo '<div class="dice">' . $random . '</div>';
+        $this->highest_num = $number_of_sides;
     }
 
     public function __toString()
     {
+        $random = rand($this->lowest_num, $this->highest_num);
+        return '<div class="dice">' . $random . '</div>';
     }
 }
 
@@ -32,15 +33,20 @@ class Dice
 
   <main>
     <form action="" method="get">
-      <input type="number" name="dices" id="count-of-dices">
+      <input type="number" name="dices" id="dices">
+      <select name="sides" id="sides">
+        <option value="4">4</option>
+        <option value="4">6</option>
+        <option value="4">10</option>
+        <option value="4">20</option>
+      </select>
       <input type="submit" value="Generate">
     </form>
 
     <div class="dices-wrapper">
       <?php
         for ($i = 0; $i < $_GET['dices']; $i++) {
-            $dice = new Dice;
-            $dice->roll();
+            echo new Dice($_GET['sides']);
         }
       ?>
     </div>
