@@ -1,0 +1,12 @@
+{
+    "name": "petrbelecky/composer-test",
+    "authors": [
+        {
+            "name": "Petr Bělecký",
+            "email": "23419559+PetrBelecky@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.5"
+    }
+}
