@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 100vw;
+}
+
+main {
+  width: 70%;
+  margin: 3rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.dices-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-top: 2rem;
+}
+
+.dice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  margin: 0.3rem;
+  border: 1px solid black;
+  border-radius: 2px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
