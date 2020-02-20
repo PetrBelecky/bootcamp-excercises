@@ -36,9 +36,9 @@ class Dice
       <input type="number" name="dices" id="dices">
       <select name="sides" id="sides">
         <option value="4">4</option>
-        <option value="4">6</option>
-        <option value="4">10</option>
-        <option value="4">20</option>
+        <option value="6">6</option>
+        <option value="10">10</option>
+        <option value="20">20</option>
       </select>
       <input type="submit" value="Generate">
     </form>
