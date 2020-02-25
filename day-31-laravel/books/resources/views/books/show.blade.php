@@ -48,6 +48,7 @@
 				</a>
 				<h1>{{$book->title}}</h1>
 				<p>Authors: {{$book->authors}}</p>
+				<p>Publisher: {{$book->publisher->title}}</p>
 				<img src="{{$book->image}}">
 </main>
     
