@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Review;
 use Illuminate\Database\Eloquent\Model;
 
 class Book extends Model
@@ -13,8 +14,13 @@ class Book extends Model
         return $this->belongsTo(Publisher::class);
     }
 
-    public function genres()
+    public function reviews()
     {
-        return $this->belongsToMany(Genre::class);
+        return $this->hasMany(Review::class);
+    }
+
+    public function bookshops()
+    {
+        return $this->belongsToMany(Bookshop::class);
     }
 }

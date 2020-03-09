@@ -31,18 +31,19 @@
 		margin: 2rem;
 	}
 
-	.books__wrapper {
+	.bookshops__wrapper {
 		width: 100%;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: center;
+		justify-content: flex-start;
+		margin-top: 2rem;
 	
 	}
 
-	.book {
+	.bookshop {
 		width: 20rem;
-		height: 22rem;
+		height: 5rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
@@ -52,25 +53,18 @@
 		color: #333;
 		box-shadow: 0 0 6px 0 lightgray;
 		border-radius: 6px;
-		margin: 1rem;
+		margin: 1rem 1rem;
 		padding: 1rem;
 	}
 
-	img {
-		margin: 1rem 0;
-	}
 
-	.book__more {
-		text-decoration: none;
-		padding: 0.6rem 1.5rem;
-		border: 1px solid #1b7dfc;
+	.success {
+		font-size: 0.9rem;
+		background-color: green;
 		color: white;
-		border-radius: 4px;
-		background-color: #1b7dfc; 	
-	}
-
-	.book__more:hover {
-		background-color: #016fff; 	
+		font-weight: bold;
+		padding: 0.5rem;
+		margin-bottom: 0.5rem;
 	}
 
 </style>
@@ -80,14 +74,20 @@
 
 <main>
 	<h1>Books list</h1>
+
+	@if (Session::has('status'))
+		<p class="success">{{Session::get('status')}}</p>
+	@endif
+
+	<a 
+		href="{{ action('BookshopController@create') }}"> 
+		New Bookshop
+	</a>
 	
-	<div class="books__wrapper">
-		@foreach ($books as $book)
-		<div class="book">
-				<h3>{{$book->title}}</h3>
-				<p>{{$book->authors}}</p>
-				<img src="{{$book->image}}">
-				<a class="book__more" href= {{action('BookORMController@show', [$book->id])}}>Read more</a>
+	<div class="bookshops__wrapper">
+		@foreach ($bookshops as $bookshop)
+		<div class="bookshop">
+				<p> {{$bookshop->name}} | {{$bookshop->city}}</p>
 			</div>
 	@endforeach
 	</div>

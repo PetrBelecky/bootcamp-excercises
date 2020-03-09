@@ -76,12 +76,16 @@
 
 <main>
 	<h1>Creation Form for Books</h1>
-	<form action="http://exercises:8080/day-31-laravel/books/public/books" method="post">
+	<form 
+		action="http://exercises:8080/day-31-laravel/books/public/books" 
+		method="post"
+		enctype="multipart/form-data">
+		
 		@csrf
 		<input type="text" name="title" placeholder="title">
 		<input type="text" name="authors" placeholder="authors">
-		<input type="text" name="img" placeholder="image">
-
+		{{-- <input type="text" name="img" placeholder="image"> --}}
+		<input type="file" name="image_file">
 		<select name="publisher_id" id="">
 			@foreach ($publishers as $publisher)
 				<option value="{{$publisher->title}}">
