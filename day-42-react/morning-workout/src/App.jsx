@@ -24,7 +24,7 @@ class App extends Component {
 
       // return object (that is reason for curly braces)
       const newState = {
-        count: prevState.count + 1
+        count: prevState.count + 1,
       }
 
       console.log('New state', newState);
@@ -38,9 +38,15 @@ class App extends Component {
     console.log(this.state)
 
     this.setState((prevState) => {
-      return {
-        count: prevState.count - 1
+
+      const newState = {
+
+        // Math.max returns the biggest values
+        // if count is negative, it will return 0
+        count: Math.max(prevState.count - 1, 0),
       }
+
+      return newState;
     })
   }
 
@@ -52,8 +58,8 @@ class App extends Component {
       <div className="App">
         <br />
         <Display count={this.state.count} />
-        <CounterButton value='+' handleClick={this.incrementCount} />
         <CounterButton value='-' handleClick={this.decrementCount} />
+        <CounterButton value='+' handleClick={this.incrementCount} />
       </div >
     );
   }
